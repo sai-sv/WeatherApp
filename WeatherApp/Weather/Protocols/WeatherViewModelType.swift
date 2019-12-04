@@ -9,7 +9,14 @@
 import Foundation
 import UIKit
 
-protocol WeatherViewModelType: class {
+enum Result: String {
+    case Success = "Success"
+    case Failure = "Failure"
+}
+
+protocol WeatherViewModelType: NSObject {
+    
+    func fetchCurrentWeather(completion: @escaping (Result) -> Void);
     
     var location: Box<String?> { get }
     var temperature: Box<String?> { get }

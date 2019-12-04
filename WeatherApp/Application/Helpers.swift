@@ -9,9 +9,9 @@
 import Foundation
 
 class Box<T> {
-    typealias Listner = (T) -> ()
+    typealias Listner = (T) -> Void
     
-    private var value: T {
+    var value: T {
         didSet {
             listner?(value)
         }

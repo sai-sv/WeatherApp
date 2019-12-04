@@ -43,7 +43,7 @@ enum WeatherIconManager: String {
 
 extension WeatherIconManager {
     
-    var image: UIImage {
-        return UIImage(named: self.rawValue) ?? UIImage()
+    var image: UIImage? {
+        return UIImage(named: self.rawValue) ?? nil
     }
 }

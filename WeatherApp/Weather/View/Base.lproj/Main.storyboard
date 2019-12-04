@@ -100,7 +100,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.85409915765869071" green="1" blue="0.65023677891801523" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gps-89-TDg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6mn-Ma-tHV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gps-89-TDg" secondAttribute="bottom" id="EXJ-dd-e20"/>
@@ -117,14 +117,16 @@
                         <outlet property="pressureLabel" destination="nRJ-S0-dnZ" id="s2g-Wj-TJh"/>
                         <outlet property="refreshButton" destination="hXk-ji-djn" id="YvK-8B-qkI"/>
                         <outlet property="temperatureLabel" destination="FwS-p0-R1p" id="mcI-LK-awu"/>
+                        <outlet property="viewModel" destination="wtO-xj-rf6" id="LPD-gh-E8G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="wtO-xj-rf6" customClass="WeatherViewModel" customModule="WeatherApp" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="132" y="125.4872563718141"/>
         </scene>
     </scenes>
     <resources>
-        <image name="clear-day" width="125" height="125"/>
+        <image name="clear-day" width="83" height="83"/>
     </resources>
 </document>

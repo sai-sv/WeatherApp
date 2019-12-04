@@ -18,6 +18,9 @@
 		84492F1B2396963800A92D56 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84492F1A2396963800A92D56 /* WeatherViewModel.swift */; };
 		84492F1D23969F0300A92D56 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84492F1C23969F0300A92D56 /* Helpers.swift */; };
 		84A20FA82396B38B008A1874 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A20FA72396B38B008A1874 /* WeatherViewController.swift */; };
+		84A20FAB2396BD3C008A1874 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A20FAA2396BD3C008A1874 /* NetworkService.swift */; };
+		84A20FAD2396BF58008A1874 /* WeatherNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A20FAC2396BF58008A1874 /* WeatherNetworkService.swift */; };
+		84A20FB12396FA5F008A1874 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A20FB02396FA5F008A1874 /* Error.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		84492F1A2396963800A92D56 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		84492F1C23969F0300A92D56 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		84A20FA72396B38B008A1874 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		84A20FAA2396BD3C008A1874 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		84A20FAC2396BF58008A1874 /* WeatherNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherNetworkService.swift; sourceTree = "<group>"; };
+		84A20FB02396FA5F008A1874 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +82,11 @@
 		84492F082396751D00A92D56 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				84A20FA92396BD23008A1874 /* NetworkService */,
 				84492F0C2396755600A92D56 /* View */,
 				84492F0B2396754C00A92D56 /* Controller */,
 				84492F1C23969F0300A92D56 /* Helpers.swift */,
+				84A20FB02396FA5F008A1874 /* Error.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -150,6 +158,7 @@
 		84492F102396757900A92D56 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				84A20FAC2396BF58008A1874 /* WeatherNetworkService.swift */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -160,6 +169,14 @@
 				84492F1A2396963800A92D56 /* WeatherViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84A20FA92396BD23008A1874 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				84A20FAA2396BD3C008A1874 /* NetworkService.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +254,9 @@
 				84492F1523968F2D00A92D56 /* WeatherIconManager.swift in Sources */,
 				84492F1D23969F0300A92D56 /* Helpers.swift in Sources */,
 				84492EF523966FC600A92D56 /* AppDelegate.swift in Sources */,
+				84A20FAB2396BD3C008A1874 /* NetworkService.swift in Sources */,
+				84A20FAD2396BF58008A1874 /* WeatherNetworkService.swift in Sources */,
+				84A20FB12396FA5F008A1874 /* Error.swift in Sources */,
 				84492F1B2396963800A92D56 /* WeatherViewModel.swift in Sources */,
 				84A20FA82396B38B008A1874 /* WeatherViewController.swift in Sources */,
 				84492F1323968E7F00A92D56 /* WeatherData.swift in Sources */,
@@ -394,7 +414,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sais.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -412,7 +432,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sais.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
